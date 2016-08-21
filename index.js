@@ -7,6 +7,6 @@ server.listen(port);
 
 app.use('/app', express.static('app'));
 
-app.get('/', function (req, res) {
+app.get('/*', function (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
